@@ -53,9 +53,9 @@ Dependencies
 The patch uses the "ambimonitor" object from the ICST Ambisonics Package. This is used for display and 
 manual manipulation of sound source positions in x,y,z virtual space. 
 
-Getting Started with the Example
+Getting Started with an Example
 
-The main patch invokes 2 /play and 2 /position commands when started, to demonstrate positioning and playback on 2 virtual channels. The channel positions are initially (-0.4,0.1,0.2) and (0.4,-0.1,0.4). These should appear in the "ambimonitor" graphic under "Virtual Channel Positions". These positions can be moved manually by selecting and dragging them in the ambimonitor. The loudness of each channel is also depending on their proximity to any speakers in the selected speaker 
+The main patch invokes 2 "/play" and 2 "/position" commands when started, to demonstrate positioning and playback on 2 virtual channels. The channel positions are initially (-0.4, 0.1, 0.2) and (0.4, -0.1, 0.4). These should appear in the "ambimonitor" graphic under "Virtual Channel Positions". These positions can be moved manually by selecting and dragging them in the ambimonitor. The loudness of each channel is also depending on their proximity to any speakers in the selected speaker 
 configuration. Different speaker configurations for binaural, 4-channel, and 16-channel are available at the lower left 
-of the main patch. Binaural is selected on patch loading. 
+of the main patch. Binaural is automatically selected on patch loading. 
 
