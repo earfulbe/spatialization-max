@@ -20,7 +20,7 @@ The number of speakers and their spatial positions are configured in a JSON file
 gain and reverb calculations, for each sound source, whenever a new /position is presented. Speaker configurations 
 for 16-chan, binaural, and various 4-chan geometries are included. The overall speaker space is -1 <= x,y <= +1; 0 <= z <= 1.
 
-## Speaker Rolloff:
+## Speaker Rolloff
 
 The gain on each speaker for each virtual channel is a function of its distance from that speaker and a 
 "rolloff" parameter. A Gaussian function is used to compute each speaker gain rolloff. This allows for 
@@ -29,7 +29,7 @@ set to accomplish a continuum of signal isolation or spread across the speakers.
 
     gaini = e^^(-distancei^^2 / (2 * rolloff))
 
-## Reverb Parameters:
+## Reverb Parameters
 
 ### C1: A Sigmoid function is used as the activation function for reverb, applied to each virtual channel 
 per speaker. This allows for a continuum of fairly abrupt to gradual application of reverb at desired 
