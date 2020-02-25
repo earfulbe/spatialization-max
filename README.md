@@ -5,13 +5,15 @@ This patch handles 16 virtual channels over which soundfile /play commands are p
 
 The main patch is "Virt16SF-reverb.maxpat". Subpatches, JSON speaker config files, smaple sounds, and a required Javascript program are included in the distribution.
 
-Control:
+Control
     The patch receives the /play and /position commands as OSC messages via a UDP port. This is useful for controller play events and spatial animation from external software (I use Unity for this). However, the patch could just as easily be fed from other Max patches, using send/receive. It is also posible to send /play commands and manipulate sound positions manually in the patch. It includes some examples of this. 
 
-Speaker Configuration:
+Speaker Configuration
+
     The number of speakers and their positions is configured in a JSON file and loaded into a dict for speaker gain calculations. We include some configurations for 16-chan, binaural, and various 4-chan geometries. The overal speaker space is -1 <= x,y <= +1; 0 <= z <= 1.
 
 Speaker Rolloff:
+
     The gain on each speaker for each virtual channel is a function of its distance from that speaker and a "rolloff" parameter. A Gaussian function is used to compute each speaker gain rolloff. Te rolloff parameter sets the "variance" of the Gaussian curve. This allows for smooth panning across speakers.
 
     gaini = e^^(-distancei^^2 / (2 * rolloff))
@@ -34,6 +36,7 @@ Reverb Settings:
     Reverberation Time: 
     The reverberation time is controlled by this parameter, revtime, the reverb delay in milliseconds. This is multiplied by the reverb sigmoid for sound source distance from (0,0,0). That is, the reverb delay is not computed differently per speaker, but for distance from the origin of virtual playback space.
 
-Dependencies:
+Dependencies
+
     The patch uses the "ambimonitor" object from the ICST Ambisonics Package. This is used for display and manual manipulation of sound source positions in x,y,z virtual space. 
 
