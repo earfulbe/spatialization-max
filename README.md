@@ -25,3 +25,6 @@ reverb_gain = gain * reverb_rolloff * wetness
 
 Reverberation Time: 
 The reverberation time is controlled by this parameter, revtime, the reverb delay in milliseconds. This is multiplied by the reverb sigmoid for sound source distance from (0,0,0). That is, the reverb delay is not computed differently per speaker, but for distance from the origin of virtual playback space.
+
+Dependencies:
+Currently using the "ambimonitor" from ICST Ambisonics Package - for display of sound source positions in x,y,z virtual space. 
