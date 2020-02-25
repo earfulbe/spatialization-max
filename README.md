@@ -6,6 +6,7 @@ This patch handles 16 virtual channels over which soundfile /play commands are p
 The main patch is "Virt16SF-reverb.maxpat". Subpatches, JSON speaker config files, smaple sounds, and a required Javascript program are included in the distribution.
 
 Control
+
     The patch receives the /play and /position commands as OSC messages via a UDP port. This is useful for controller play events and spatial animation from external software (I use Unity for this). However, the patch could just as easily be fed from other Max patches, using send/receive. It is also posible to send /play commands and manipulate sound positions manually in the patch. It includes some examples of this. 
 
 Speaker Configuration
