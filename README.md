@@ -15,8 +15,7 @@ send /play commands and manipulate sound positions manually in the patch. It inc
 Speaker Configuration
 
 The number of speakers and their positions is configured in a JSON file and loaded into a dict for speaker 
-gain calculations. We include some configurations for 16-chan, binaural, and various 4-chan geometries. 
-The overal speaker space is -1 <= x,y <= +1; 0 <= z <= 1.
+gain and reverb calculations for each sound source. We include some configurations for 16-chan, binaural, and various 4-chan geometries. The overal speaker space is -1 <= x,y <= +1; 0 <= z <= 1.
 
 Speaker Rolloff:
 
