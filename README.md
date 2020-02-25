@@ -1,5 +1,7 @@
 # spatialization-max
-A Max/MSP patch for controlling audio channel gains and reverb across multiple speakers.
+A Max/MSP patch for controlling audio channel gains and reverb across multiple speakers. This patch handles 16 virtual channels over which soundfile /play commands are presented. The /play commands include a channel number, soundfile path, and a loop indicator. The patch also takes /position commands which include a channel number and x,y,z coordinate in virtual sound space. The patch takes care of setting gain and reverb for each speaker in the system (curretnly up to 16) according to the sound's coordinate distance from each speaker. Arbitrary speaker confogurations for number (up to 16) and placement are possible, and expressed in json. The patch was designed for the 16 speaker CLEAT (Chicago Laboratory for Electro-Acoustic Theater) system, set up by Stephan Moore at Elastic Arts in Chicago, but includes examples and settings for a variety of 4-channel and binaural confifgurations. 
+
+The patch receives the /play and /position commands as OSC messages via a UDP port. This is useful for controller play events and spatial animation from external software (I use Unity for this). However, the patch could just as easily be fed from other Max patches, using send/receive. It is also posible to send /play commands and manipulate sound positions manually in the patch. It includes some examples of this. 
 
 Speaker Configuration
 The number of speakers and their positions is configured in a json file and loaded into a dict for speaker gain calculations. We include some configurations for 16-chan, binaural, and various 4-chan geometries. The overal speaker space is -1 <= x,y <= +1; 0 <= z <= 1.
