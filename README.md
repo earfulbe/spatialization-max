@@ -29,7 +29,7 @@ Reverb Settings:
     The reverb at each speaker is affected by sound source distance from each speaker. 
 
     Wetness:
-    Wetness: The overall amount of reverb relative to the "dry" source signal is also controlled by this parameter.
+    The overall amount of reverb relative to the "dry" source signal is also controlled by this parameter (0.0-1.0).
 
     reverb_gain = gain * reverb_rolloff * wetness
 
