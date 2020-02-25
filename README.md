@@ -19,7 +19,7 @@ Speaker Rolloff:
 
     gaini = e^^(-distancei^^2 / (2 * rolloff))
 
-Reverb Settings:
+Reverb Parameters:
 
     C1: A Sigmoid function is used as an activation function for reverb applied to each virtual channel per speaker. This allows for a flexible - fairly abrupt, or gradual  - use of reverb at desired distance thresholds. The shape of the curve is controlled by the "c1" parameter. A c1 value of .25 is gradual, a value of 2.0 is fairly steep.
 
