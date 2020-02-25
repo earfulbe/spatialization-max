@@ -31,22 +31,26 @@ set to accomplish a continuum of signal isolation or spread across the speakers.
 
 ## Reverb Parameters
 
-### C1: A Sigmoid function is used as the activation function for reverb, applied to each virtual channel 
+A Sigmoid function is used as the activation function for reverb, applied to each virtual channel 
 per speaker. This allows for a continuum of fairly abrupt to gradual application of reverb at desired 
-distance thresholds. The shape of the curve is controlled by this "c1" parameter. A c1 value of .25 is gradual, 
+distance thresholds. 
+
+### C1
+The shape of the Sigmoid curve is controlled by the "c1" parameter. A c1 value of .25 is gradual, 
 a value of 2.0 is fairly steep.
 
-### C2: The distance value at which the function reaches its halfway point (.5) is controlled by this 
+### C2
+The distance value at which the function reaches its halfway point (.5) is controlled by this 
 parameter. 
 
     reverb_rolloff = 1/(1 + e^^(-c1 *(distance - c2)))
 
-### Wetness:
+### Wetness
 The overall amount of reverb relative to the original "dry" source signal is controlled by this parameter (0.0-1.0).
 
     reverb_gain = gain * reverb_rolloff * wetness
 
-### Reverberation Time: 
+### Reverberation Time
 The reverberation time is controlled by this parameter, revtime, the reverb delay in milliseconds. 
 This is multiplied by the reverb sigmoid for sound source distance from (0, 0, 0). That is, the reverb 
 delay is not computed  per speaker, but for distance of the sound source from the origin of virtual playback space.
@@ -58,6 +62,8 @@ manual manipulation of sound source positions in (x, y, z) virtual space. The pa
 Ambisonic encoder and decoder for source / speaker decoupling. Although it now achieves its own decoupling, 
 computing its own gains without the Ambisonic encoder/decoder, we use the ambimonitor for displaying and manually
 manipulating sound source positions. It's very handy.
+
+![ICST Ambisonics Package!](ambimonitor.png "ICST Ambisonics Package - ambimonitor object")
 
 ## Getting Started Example
 
