@@ -7,7 +7,7 @@ The patch also takes "/position" commands which include a channel number and (x,
 
 The main patch is "Virt16SF-reverb.maxpat". Subpatches, JSON speaker config files, sample sounds, and a Javascript program for computing gains are included in the distribution. This particular patch is for spatializing sound files, but companion patches for spatializing oscillator and audio-in signal banks are also in development. 
 
-## Control
+## OSC Control
 
 The patch receives the /play and /position commands as OSC messages through a UDP port. This is useful for 
 controlling play events and spatial animation from external software (e.g. Unity). However, the patch could 
