@@ -63,7 +63,7 @@ Ambisonic encoder and decoder for source / speaker decoupling. Although it now a
 computing its own gains without the Ambisonic encoder/decoder, we use the ambimonitor for displaying and manually
 manipulating sound source positions. It's very handy.
 
-![ICST Ambisonics Package!](ambimonitor.png "ICST Ambisonics Package - ambimonitor object")
+![ICST Ambisonics Package!](ICST_ambimonitor.png "ICST Ambisonics Package - ambimonitor object")
 
 ## Getting Started Example
 
