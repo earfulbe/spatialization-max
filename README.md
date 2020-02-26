@@ -1,5 +1,5 @@
 # spatialization-max
-### A Max/MSP patch for controlling multiple audio channel gains and reverb across multiple speakers.
+## A Max/MSP patch for controlling multiple audio channel gains and reverb across multiple speakers.
 
 This patch handles 16 virtual channels over which soundfile "/play" commands are presented. The /play commands include a channel number, soundfile path, and a loop indicator. Each channel can play any number of soundfiles, one at a time. 
 
@@ -20,7 +20,7 @@ The number of speakers and their spatial positions are configured in a JSON file
 gain and reverb calculations, for each sound source, whenever a new /position is presented. Speaker configurations 
 for 16-chan, binaural, and various 4-chan geometries are included. The overall speaker space is -1 <= x,y <= +1; 0 <= z <= 1.
 
-## Speaker Rolloff
+## Speaker Rolloff Parameter
 
 The gain on each speaker for each virtual channel is a function of its distance from that speaker and a 
 "rolloff" parameter. A Gaussian function is used to compute each speaker gain rolloff. This allows for 
