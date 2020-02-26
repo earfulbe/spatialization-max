@@ -14,7 +14,7 @@ controlling play events and spatial animation from external software (e.g. Unity
 just as easily be fed these commands from other Max patches, using send/receive. It is also possible to 
 send /play commands and manipulate sound positions manually in the patch. Example are invoked on initial load. 
 
-## Speaker Configuration
+## Speaker Configurations
 
 The number of speakers and their spatial positions are configured in a JSON file and loaded into a dict for speaker 
 gain and reverb calculations, for each sound source, whenever a new /position is presented. Speaker configurations 
