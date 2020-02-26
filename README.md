@@ -29,12 +29,14 @@ set to accomplish a continuum of signal isolation or spread across the speakers.
 
     gaini = e^^(-distancei^^2 / (2 * rolloff))
 
+![Gaussian Curve!](gaussian.png "Gaussian Curve")
 ## Reverb Parameters
 
 A Sigmoid function is used as the activation function for reverb, applied to each virtual channel 
 per speaker. This allows for a continuum of fairly abrupt to gradual application of reverb at desired 
 distance thresholds. 
 
+![Sigmoid Function!](sigmoid.png "Sigmoid Function")
 ### C1
 The shape of the Sigmoid curve is controlled by the "c1" parameter. A c1 value of .25 is gradual, 
 a value of 2.0 is fairly steep.
