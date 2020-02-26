@@ -1,5 +1,5 @@
 # spatialization-max
-A Max/MSP patch for controlling audio channel gains and reverb across multiple speakers. 
+### A Max/MSP patch for controlling multiple audio channel gains and reverb across multiple speakers.
 
 This patch handles 16 virtual channels over which soundfile "/play" commands are presented. The /play commands include a channel number, soundfile path, and a loop indicator. Each channel can play any number of soundfiles, one at a time. 
 
