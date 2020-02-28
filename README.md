@@ -77,5 +77,6 @@ There is also a "Main Gain" control at the upper right of the patch. It is initi
 
 ***
 Bill Parod<br/>
-[earful.be](https://earful.be "earful.be"){:target="_blank"}
+<a href="https://earful.be/" target="_blank">earful.be</a>
+
 
