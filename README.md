@@ -12,7 +12,7 @@ The main patch is "Virt16SF-reverb.maxpat". Subpatches, JSON speaker config file
 The patch receives its /play and /position commands as OSC messages through a UDP port. This is useful for 
 controlling play events and spatial animation from external software (e.g. Unity). However, the patch could 
 just as easily be fed these commands from other Max patches, using send/receive. It is also possible to 
-send /play commands and manipulate sound positions manually in the patch. Example are invoked on initial load. 
+send /play commands and manipulate sound positions manually in the patch. 
 
 ## Speaker Configurations
 
