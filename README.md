@@ -75,6 +75,8 @@ of the main patch. Binaural is automatically selected on patch loading.
 
 There is also a "Main Gain" control at the upper right of the patch. It is initially set to -6.0 dB. Adjust as needed.
 
+***
 Bill Parod
+
 [earful.be](https://earful.be "earful.be")
 
